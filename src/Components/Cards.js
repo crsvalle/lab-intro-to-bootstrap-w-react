@@ -4,6 +4,7 @@ export default function Cards({data, location}){
 
     function getImg(){
         location = location.toLowerCase()
+        location = location.split(' ').join('-')
         return images[location]
         
     }
